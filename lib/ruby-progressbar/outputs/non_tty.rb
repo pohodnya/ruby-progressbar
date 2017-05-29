@@ -29,7 +29,7 @@ class   NonTty < Output
     DEFAULT_FORMAT_STRING
   end
 
-  resolve_format(other_format)
+  def resolve_format(other_format)
     other_format || default_format
   end
 
