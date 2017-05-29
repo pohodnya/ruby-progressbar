@@ -29,8 +29,8 @@ class   NonTty < Output
     DEFAULT_FORMAT_STRING
   end
 
-  def resolve_format(*)
-    default_format
+  resolve_format(other_format)
+    other_format || default_format
   end
 
   def refresh_with_format_change(*); end
